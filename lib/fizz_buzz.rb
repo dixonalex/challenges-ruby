@@ -17,11 +17,12 @@ class FizzBuzz
   def print(*args)
     for i in @lowBound..@highBound
       if i % fizzMod == 0 and i % buzzMod == 0 
-        puts "Value #{i}: FizzBuzz"
+        puts "FizzBuzz"
       elsif i % fizzMod == 0 
-        puts "Value #{i}: Fizz"
+        puts "Fizz"
       elsif i % buzzMod == 0 
-        puts "Value #{i}: Buzz"
+        puts "Buzz"
+      else puts i
       end
     end
   end
